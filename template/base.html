@@ -21,7 +21,7 @@
 <body>
     <nav>
         <div class="navbar">
-            <a href="{% url 'post_list' %}" class="navbar-brand">DjangoBlogPlatform</a>
+            <a href="{% url 'post_list' %}" class="navbar-brand">BlogPlatform</a>
             <ul class="nav-links">
                 {% if user.is_authenticated %}
                 <a href="{% url 'profile' user.pk %}">
