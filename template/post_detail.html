@@ -23,7 +23,7 @@
         <span class="post-date">Published on: {{ post.created_at }}</span>
         <span class="post-views">Views: {{ post.views }}</span>
     </div>
-    <div class="post-content">{{ post.content }}</div>
+    <div class="post-content">{{ post.content|safe }}</div>
     {% if user == post.author %}
     <div class="post-actions">
         <a href="{% url 'post_update' post.pk %}" class="edit-link">Edit</a>
